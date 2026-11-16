@@ -6,6 +6,7 @@ import { AppService } from './app.service.js';
 import { AlunosModule } from './alunos/alunos.module.js';
 import { AlunosController } from './alunos/alunos.controller.js';
 import { AlunosService } from './alunos/alunos.service.js';
+import { ProdutosModule } from './produtos/produtos.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -21,6 +22,8 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     }),
 
     AlunosModule,
+
+    ProdutosModule,
   ],
   controllers: [AppController, AlunosController],
   providers: [AppService, AlunosService],
